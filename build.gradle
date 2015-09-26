@@ -1,0 +1,33 @@
+buildscript {
+	ext {
+		springBootVersion = '1.2.6.RELEASE'
+		activitiVersion = '5.18.0'
+	}
+
+	repositories {
+		jcenter()
+	}
+
+	dependencies {
+		classpath "org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion"
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'spring-boot'
+
+project.sourceCompatibility = JavaVersion.VERSION_1_8
+
+repositories {
+	jcenter()
+}
+
+dependencies {
+	compile "org.activiti:activiti-spring-boot-starter-rest-api:$activitiVersion"
+	compile 'com.h2database:h2'
+	compile 'org.springframework.boot:spring-boot-starter-hateoas'
+}
+
+wrapper {
+	gradleVersion = '2.7'
+}
