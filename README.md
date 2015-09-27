@@ -46,7 +46,7 @@ public ObjectMapper objectMapper() {
 }
 ```
 
-This instance of ```ObjectMapper``` deactivates instances annotated with ```@Primary``` from ```JacksonAutoConfiguration.JacksonObjectMapperConfiguration``` class:
+This instance of ```ObjectMapper``` deactivates instance annotated with ```@Primary``` from ```JacksonAutoConfiguration.JacksonObjectMapperConfiguration``` class:
 
 ```java
 @Configuration
