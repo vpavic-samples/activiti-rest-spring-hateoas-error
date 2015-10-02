@@ -23,9 +23,13 @@ repositories {
 }
 
 dependencies {
-	compile "org.activiti:activiti-spring-boot-starter-rest-api:$activitiVersion"
-	compile 'com.h2database:h2'
+	compile 'org.springframework.boot:spring-boot-starter-web'
+	compile 'org.springframework.boot:spring-boot-starter-jdbc'
 	compile 'org.springframework.boot:spring-boot-starter-hateoas'
+
+	compile "org.activiti:activiti-spring-boot-starter-rest-api:$activitiVersion"
+
+	compile 'com.h2database:h2'
 }
 
 wrapper {
