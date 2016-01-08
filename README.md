@@ -1,5 +1,11 @@
 # Activiti REST - Spring HATEOAS error
 
+**UPDATE**:
+This issue was present in Activiti release ```5.18.0``` and was fixed in ```5.19.0```.
+See [ACT-4069](https://activiti.atlassian.net/browse/ACT-4069) and [this PR](https://github.com/Activiti/Activiti/pull/679).
+
+---
+
 This is a minimal project to demonstrate error that occurs when using ```activiti-spring-boot-starter-rest-api``` together with ```spring-boot-starter-hateoas```.
 
 Run the project using Gradle task ```bootRun```. Startup fails with following error:
